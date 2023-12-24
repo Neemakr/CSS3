@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            CSS Counters
+        </title>
+        <style>
+            body{
+                counter-reset: section;
+            }
+            div::before{
+                counter-increment: section;
+                content: "Section" counter(section) ":";
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Div1.
+        </div>
+        <div>
+            Div2.
+        </div>
+        <p>
+            Paragraph
+        </p>
+    </body>
+</html>

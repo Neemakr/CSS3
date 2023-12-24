@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            CSS Sections and Subsections
+        </title>
+        <style>
+            body{
+                counter-reset: section;
+            }
+            div::before{
+                counter-increment: section;
+                content: "Section" counter(section) ": ";
+            }
+            div{
+                counter-reset: subsection;
+            }
+            p::before{
+                counter-increment: subsection;
+                content: counter(section)"." counter(subsection) ": ";
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Div1.
+        </div>
+        <p>
+            Paragraph1.
+        </p>
+        <div>
+            Div2.
+            <p>
+                Paragraph2.
+            </p>
+        </div>
+    </body>
+</html>

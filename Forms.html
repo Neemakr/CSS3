@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            CSS Forms
+        </title>
+        <style>
+            input{
+                width: 100%;
+                margin: 10px;
+                padding: 10px;
+            }
+            input[type="password"]{
+                border: 2px solid green;
+                border-radius: 15px;
+            }
+            input[type="search"]{
+                border: 2px solid gray;
+                font-size: 16px;
+                background-image: url(search-icon-vector-6093076.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for = "fName">
+                FirstName:
+            </label><br>
+            <input type = "text" id = "fName" name = "fName">
+            <label for = "lName">
+                LastName:
+            </label>
+            <input type = "text" id = "lName" name = "lName">
+            <label for = "password">
+                Password:
+            </label>
+            <input type="password">
+            <input type = "search" placeholder="Search..">
+        </form>
+    </body>
+</html>
